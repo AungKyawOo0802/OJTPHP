@@ -31,7 +31,6 @@ class UserController extends Controller
     public function userList()
     {
         $userList = $this->userInterface->getUserList();
-        dd('gg');
         return view('users.users_list', [
             "users" => $userList
         ]);
